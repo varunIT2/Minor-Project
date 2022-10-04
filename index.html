@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-nonprofit.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 May 2022 19:17:14 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Caveat+Brush&amp;family=Poppins:wght@300;400;500;600;700;900&amp;display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="css/calendar.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/colorsa0f9.css?color=C6C09C" type="text/css" />
+	<link rel="stylesheet" href="demos/nonprofit/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="demos/nonprofit/nonprofit.css" type="text/css" />
+
+	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+	<title>NonProfit Demo | canvas</title>
+	<style>
+		.hover {
+			opacity: 1;
+		}
+
+		.hover:hover {
+			opacity: 0.8;
+		}
+	</style>
+</head>
+
+<body class="stretched">
+
+	<div id="wrapper" class="clearfix">
+
+		<header id="header" class="header-size-sm border-bottom-0" data-sticky-shrink="false">
+			<div id="header-wrap">
+
+				<div class="header-row justify-content-lg-between">
+
+					<div id="logo" class="me-lg-1">
+						<a href="index.html" class="standard-logo"
+							data-dark-logo="demos/business/images/mera_gaon.png"><img style="width: 100px;"
+								src="demos/business/images/mera_gaon.png" alt="canvas Logo"></a>
+						<a href="index.html" class="retina-logo"
+							data-dark-logo="demos/business/images/logo-dark@2x.png"><img
+								src="demos/business/images/mera_gaon.png" alt="canvas Logo"></a>
+					</div>
+					<div class="header-misc" style="padding-right: 80px;">
+						<a href="donate.html" class="button button-rounded button-light">
+							<div>Donate</div>
+						</a>
+					</div>
+					<div id="primary-menu-trigger">
+						<svg class="svg-trigger" viewBox="0 0 100 100">
+							<path
+								d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+							</path>
+							<path d="m 30,50 h 40"></path>
+							<path
+								d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+							</path>
+						</svg>
+					</div>
+
+					<nav class="primary-menu with-arrows me-lg-auto">
+						<ul class="menu-container align-self-start">
+							<li class="menu-item"><span class="menu-bg col-auto align-self-start d-flex"></span>
+							</li>
+							<li class="menu-item current"><a class="menu-link" href="index.html">
+									<div>Home</div>
+								</a></li>
+							<li class="menu-item"><a class="menu-link" href="demo-nonprofit-about.html">
+									<div>About</div>
+								</a></li>
+							<li class="menu-item"><a class="menu-link" href="demo-nonprofit-causes.html"
+									style="pointer-events: none;">
+									<div>Causes</div>
+								</a>
+								<ul class="sub-menu-container">
+									<li class="menu-item"><a class="menu-link" href="demo-nonprofit-causes-single.html">
+											<div>Nanhe kalam </div>
+										</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a class="menu-link" href="demo-nonprofit-events.html">
+									<div>Events</div>
+								</a></li>
+							<li class="menu-item"><a class="menu-link" href="demo-nonprofit-contact.html">
+									<div>Contact</div>
+								</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+	</div>
+	<div class="header-wrap-clone"></div>
+	</header>
+
+	<section id="slider" class="slider-element dark swiper_wrapper slider-parallax min-vh-75">
+		<div class="slider-inner">
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption">
+								<div>
+									<h2 class="nott" data-animate="fadeInUp">Help the Homeless.</h2>
+									<a href="demo-nonprofit-about.html" data-animate="fadeInUp" data-delay="400"
+										class="button button-rounded button-large button-light shadow nott ls0 ms-0 mt-4">Know
+										More</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg"
+							style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url('demos/nonprofit/images/slider/1.png') no-repeat center center; background-size: cover;">
+						</div>
+					</div>
+					<div class="swiper-slide dark">
+						<div class="container">
+							<div class="slider-caption">
+								<div>
+									<h2 class="nott" data-animate="fadeInUp">Donate with Kindness.</h2>
+									<a href="demo-nonprofit-about.html" data-animate="fadeInUp" data-delay="400"
+										class="button button-rounded button-large button-light shadow nott ls0 ms-0 mt-4">Know
+										More</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide-bg"
+							style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8)), url('demos/nonprofit/images/slider/2.png') no-repeat center center; background-size: cover;">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-navs">
+					<div class="slider-arrow-left"><i class="icon-line-arrow-left"></i></div>
+					<div class="slider-arrow-right"><i class="icon-line-arrow-right"></i></div>
+				</div>
+				<div class="swiper-scrollbar">
+					<div class="swiper-scrollbar-drag">
+						<div class="slide-number">
+							<div class="slide-number-current"></div><span>/</span>
+							<div class="slide-number-total"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content">
+		<div class="content-wrap py-0" style="overflow: visible">
+			<svg viewBox="0 0 1382 58" width="100%" height="60" preserveAspectRatio="none"
+				style="position: absolute; top: -58px; left:0; z-index: 1">
+				<path style="fill:#FFF;" d="M1.52.62s802.13,127,1380,0v56H.51Z" />
+			</svg>
+			<div class="container">
+				<div class="slider-feature w-100">
+					<div class="row justify-content-center">
+						<div class="col-md-3 px-1">
+							<a href="demo-nonprofit-about.html"
+								class="card center border-start-0 border-end-0 border-top-0 border-bottom border-bottom shadow py-3 rounded-0 fw-semibold text-uppercase ls1">
+								<div class="card-body">
+									<i class="fa fa-globe"></i>View Our Mission
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 px-1">
+							<a href="demo-nonprofit-causes-single.html"
+								class="card center border-start-0 border-end-0 border-top-0 border-bottom border-bottom shadow py-3 rounded-0 fw-semibold text-uppercase ls1">
+								<div class="card-body">
+									<i class="fa fa-pencil"></i>Nanhe Kalam
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 px-1">
+							<a href="demo-nonprofit-volunteers.html"
+								class="card center border-start-0 border-end-0 border-top-0 border-bottom border-bottom shadow py-3 rounded-0 fw-semibold text-uppercase ls1">
+								<div class="card-body">
+									<i class="fa fa-group"></i>Volunteers
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section bg-transparent">
+				<div class="container clearfix">
+					<div class="row justify-content-center mb-5">
+						<div class="col-md-7 center">
+							<div class="heading-block border-bottom-0 mb-4">
+								<div class="heartbeat-wrapper">
+									<h2 class="mb-4 nott">Our Mission <span>&amp;</span> Goals</h2>
+								</div>
+							</div>
+							<div class="svg-line bottommargin-sm clearfix">
+								<img style="width: 400px;" src="demos/nonprofit/images/underline.png" alt="svg divider"
+									height="20">
+							</div>
+							<p>Your small support can bring smiles to the community.</p>
+						</div>
+					</div>
+					<div class="row mission-goals gutter mb-0">
+						<div class="col-md-6">
+							<div class="feature-box fbox-plain bg-color-light mx-0">
+								<div class="fbox-media position-relative col-auto p-0 me-4">
+									<img src="demos/nonprofit/images/icons/home.svg" alt="Featured Icon 1" width="50">
+								</div>
+								<div class="fbox-plain">
+									<h3 class="nott ls0"><a href="#" class="text-dark">VISION</a>
+									</h3>
+									<p>“Empowering rural people for their own development”</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="feature-box fbox-plain bg-color-light mx-0">
+								<div class="fbox-media position-relative col-auto p-0 me-4">
+									<img src="demos/nonprofit/images/icons/health.svg" alt="Featured Icon 2" width="50">
+								</div>
+								<div class="fbox-content">
+									<h3 class="nott ls0"><a href="#" class="text-dark">MISSION</a>
+									</h3>
+									<p class="text-dark">Our Mission is to “adopt” one village at a time and work with
+										them with a
+										objective of eradicating poverty and unemployment through a
+										three-pronged-strategy i.e.
+										EDUCATION, INFRASTRUCTURE AND EMPOWERMENT.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="fullwidth-section" style="padding-bottom: 50px;">
+				<div class="section-outer clearfix row" style="background-color: rgba(31,31,31,0.90);">
+					<div class="col-md-6">
+						<img src="demos/nonprofit/images/cause/5.png" alt="">
+					</div>
+					<div class="content-column col-md-6">
+						<div class="content">
+							<h3 class="pb-30 mob-font-redused" style="color: white; padding: 4rem 4rem 0rem 4rem;">"You
+								have not lived today until you have done something for someone
+								who can never repay you" - John Bunyan </h3>
+							</h2>
+							<div class="text justify" style="color: grey; font-size: large;padding:0rem 4rem;">We are
+								envisioning to build an ecosytem for youth who are bringing sustainable
+								social change within their community.
+							</div>
+							<div class="text justify" style="color: grey; font-size: large;padding:0rem 4rem;">We invite
+								you to support us in materializing our vision.With your vital
+								contribution we will reach 5000 children in 10 villages and 200 young minds in next
+								three years.
+							</div>
+							<div class="text justify" style="color: grey; font-size: large;padding:0rem 4rem;">We are
+								immensely grateful for all our well wishers who have supported us in
+								coming so far. We hope we will move ahead together in this journey.
+							</div>
+							<div class="text pt-20" style="color: grey; font-size: large;padding:0rem 4rem;">Thank You
+								for being a co-traveller.
+							</div>
+							<div class="header-misc" style="padding:4rem 2rem;">
+								<a href="donate.html" class="button button-rounded button-light">
+									<div>Donate</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="default-section" style="padding: 6rem;">
+				<div class="container">
+					<div class="sec-title medium">
+						<h2>About Us</h2>
+					</div>
+					<div class="row clearfix">
+						<!--About Column-->
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="sec-title medium">
+								<h3 style="color: black;">Who we are</h3>
+							</div>
+							<div class="text justify">
+								Mera Gaon Meri Dunia is a group of passionate individuals who are enabling change across
+								communities
+								by empowering the youth to transform the ecosystem ..........
+								<a href="demo-nonprofit-about.html" target="_blank" id="green">Read more
+								</a>
+							</div>
+						</div>
+						<!--Accordian Column-->
+						<div class="col-md-8 col-sm-12 col-xs-12">
+							<!--Sec Title-->
+							<div class="sec-title medium">
+								<h3 style="color: black;" class="pt1-30"> How our journey started</h3>
+							</div>
+							<div class="text justify">
+								We started off as a community library in a small village Jhutawad in Madhya Pradesh in
+								the year
+								2017. The space was warmly received by the children & youth across the community. A
+								small success
+								like this supported us to dream bigger. A group of passionate individuals who believed
+								in their
+								collective power to bring about a change started meeting in the village and across
+								states ..........
+								<a href="demo-nonprofit-about.html" target="_blank" id="green"> Read more
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="container-fluid my-5 clearfix">
+				<div class="d-flex flex-column align-items-center justify-content-center center counter-section position-relative py-5"
+					style="background: url('demos/nonprofit/images/world-map.png') no-repeat center center/ contain">
+					<div class="mx-auto center" style="max-width: 1000px">
+						<h3>Our mission is to help people by distributing Money and Service globally.</h3>
+					</div>
+					<div class="row align-items-stretch m-0 w-100 clearfix">
+						<div class="col-lg-3 col-sm-6 center mt-5">
+							<img src="demos/nonprofit/images/icons/logo.png" alt="Counter Icon" width="70"
+								class="mb-4">
+							<div class="counter font-secondary"><span data-from="0" data-to="796"
+									data-refresh-interval="50" data-speed="2" data-comma="true"></span>+</div>
+							<h5 class="nott ls0 mt-0"><u>Children Benefitted</u></h5>
+						</div>
+						<div class="col-lg-3 col-sm-6 center mt-5">
+							<img src="demos/nonprofit/images/icons/volunteers.png" alt="Counter Icon" width="70"
+								class="mb-4">
+							<div class="counter font-secondary"><span data-from="0" data-to="20"
+									data-refresh-interval="50" data-speed="2" data-comma="true"></span>+</div>
+							<h5 class="nott ls0 mt-0"><u>Teachers Trained</u></h5>
+						</div>
+						<div class="col-lg-3 col-sm-6 center mt-5">
+							<img src="demos/nonprofit/images/icons/educated.png" alt="Counter Icon" width="70"
+								class="mb-4">
+							<div class="counter font-secondary"><span data-from="0" data-to="2"
+									data-refresh-interval="25" data-speed="2" data-comma="true"></span>+</div>
+							<h5 class="nott ls0 mt-0"><u>School Transformed</u></h5>
+						</div>
+						<div class="col-lg-3 col-sm-6 center mt-5">
+							<img src="demos/nonprofit/images/icons/shelter.png" alt="Counter Icon" width="70"
+								class="mb-4">
+							<div class="counter font-secondary"><span data-from="0" data-to="5"
+									data-refresh-interval="50" data-speed="10" data-comma="true"></span>+</div>
+							<h5 class="nott ls0 mt-0"><u>Community Classrooms</u></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section bg-transparent">
+				<div class="container clearfix">
+					<div class="row justify-content-center mb-5">
+						<div class="col-md-7 center">
+							<div class="heading-block border-bottom-0 mb-4">
+								<div class="heartbeat-wrapper">
+									<h2 class="mb-4 nott">Our Projects</h2>
+								</div>
+							</div>
+							<div class="svg-line bottommargin-sm clearfix">
+								<img style="width: 400px;" src="demos/nonprofit/images/underline.png" alt="svg divider"
+									height="20">
+							</div>
+							<p>Your small support can bring smiles to the community.</p>
+						</div>
+					</div>
+					<section class="fullwidth-section" style="padding-bottom: 50px;">
+						<div class="section-outer clearfix row">
+							<div class="col-md-3">
+								<a href="demo-nonprofit-causes-single.html"><img
+										src="demos/nonprofit/images/cause/1.png" alt="" class="hover"></a>
+							</div>
+							<div class="content-column col-md-8">
+								<div class="content">
+									<a href="demo-nonprofit-causes-single.html">
+										<h3 class="pb-30 mob-font-redused" style=" padding: 0rem 4rem 0rem 4rem;">Nanhe
+											kalam </h3>
+									</a>
+									</h2>
+									<div class="text justify" style=" font-size: large;padding:0rem 4rem;">Nanhe kalam
+										is a project initiated in the year 2017 with the agenda of increasing the number
+										of students belonging to the economically weaker sections of the society
+										getting.....
+										<a href="demo-nonprofit-causes-single.html" target="_blank" id="green"> Read
+											more
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="section bg-transparent mt-0 mb-4">
+				<div class="container clearfix">
+					<div class="row justify-content-center" style="margin-top: 100px">
+						<div class="col-md-7 center">
+							<div class="heading-block border-bottom-0 mb-4">
+								<h2 class="mb-4 nott">Our Charity Causes</h2>
+							</div>
+							<div class="svg-line bottommargin-sm clearfix">
+								<img style="width: 400px;" src="demos/nonprofit/images/underline.png" alt="svg divider"
+									height="20">
+							</div>
+							<p>MGMG’s educational initiatives include Pre-school [3-6 yrs], Non Formal Education [6-14
+								yrs non-school going], Remedial Education [6-14 yrs school going] and Bridge Course
+								[14-18 yrs drop-outs]. These initiatives will help them to grow, nurture themselves and
+								will help them to evolve as a better citizen. Also it is important for an individual’s
+								own well-being, as they can reach their full potential and live a fruitful life. Special
+								emphasis is given on girl education and women education, so that they and their families
+								get empowered.</p>
+						</div>
+					</div>
+				</div>
+				<div class="owl-carousel owl-carousel-full image-carousel carousel-widget topmargin-sm charity-card"
+					data-stage-padding="20" data-margin="10" data-center="true" data-loop="true" data-nav="true"
+					data-autoplay="500000" data-speed="400" data-pagi="true" data-items-xs="1" data-items-sm="2"
+					data-items-md="2" data-items-lg="3" data-items-xl="4">
+					<div class="oc-item text-start">
+						<img src="demos/nonprofit/images/cause/1.png" alt="Image 1" class="rounded">
+
+					</div>
+					<div class="oc-item text-start">
+						<img src="demos/nonprofit/images/cause/3.png" alt="Image 1" class="rounded">
+
+					</div>
+					<div class="oc-item text-start">
+						<img src="demos/nonprofit/images/cause/4.png" alt="Image 1" class="rounded">
+
+					</div>
+					<div class="oc-item text-start">
+						<img src="demos/nonprofit/images/cause/2.png" alt="Image 1" class="rounded">
+
+					</div>
+					<div class="oc-item text-start">
+						<img src="demos/nonprofit/images/cause/5.png" alt="Image 1" class="rounded">
+
+					</div>
+				</div>
+			</div>
+			<div class="section mt-3"
+				style="background: #FFF url('demos/nonprofit/images/others/1\ \(2\).png') no-repeat 100% 50% / auto 80%;">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-7 center">
+							<div class="heading-block border-bottom-0 mb-4">
+								<h2 class="mb-4 nott">Unconditional Help</h2>
+							</div>
+							<div class="svg-line bottommargin-sm">
+								<img style="width: 400px; height: 20px;" src="images/underline.png" alt="svg divider">
+							</div>
+							<p>“ALONE WE CAN DO SO LITTLE TOGETHER WE CAN DO SO MUCH” - HELEN KELLER
+								<br>
+								Due to inaccessibility and poverty, children miss out on school. MGMG foundation program
+								focuses on ‘mission education’ and ‘providing employment’ to the rural people.
+							</p>
+						</div>
+					</div>
+					<div class="row mt-5 col-mb-50 mb-0">
+						<div class="col-md-3">
+							<div class="feature-box flex-column mx-0">
+								<div class="fbox-media position-relative">
+									<img src="demos/nonprofit/images/icons/donate.svg" alt="Featured Icon" width="60"
+										class="mb-3">
+								</div>
+								<div class="fbox-content px-0">
+									<h3 class="nott ls0"><a href="#" class="text-dark">Give Donation.</a></h3>
+									<p>Our donation can help a child gets a good meal, medical care, tutoring and
+										protection. Let’s Donate Today.</p>
+									<a href="donate.html"
+										class="button button-rounded button-border nott ls0 fw-normal ms-0 mt-4">Donate
+										Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-box flex-column mx-0">
+								<div class="fbox-media position-relative">
+									<img src="demos/nonprofit/images/icons/volunteer.svg" alt="Featured Icon" width="60"
+										class="mb-3">
+								</div>
+								<div class="fbox-content px-0">
+									<h3 class="nott ls0"><a href="#" class="text-dark">Become a Volunteer.</a></h3>
+									<p>We regularly publish selected volunteer opportunities. Become a volunteer and
+										help the children.
+									</p>
+									<a href="demo-nonprofit-volunteers.html"
+										class="button button-rounded button-border nott ls0 fw-normal ms-0 mt-4">Join
+										Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-box flex-column mx-0">
+								<div class="fbox-media position-relative">
+									<img src="demos/nonprofit/images/icons/help-child.svg" alt="Featured Icon"
+										width="60" class="mb-3">
+								</div>
+								<div class="fbox-content px-0">
+									<h3 class="nott ls0"><a href="#" class="text-dark">Help the Children.</a></h3>
+									<p>Help the children to blossom into something beautiful. Inspire Our Youth.</p>
+									<a href="#"
+										class="button button-rounded button-border nott ls0 fw-normal ms-0 mt-4">Help
+										Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-color subscribe-section position-relative" style="margin-top: 100px;">
+				<div class="container" style="z-index: 2;">
+					<div class="center collapsed subscribe-section-target" data-bs-toggle="collapse"
+						data-bs-target="#target-1">
+						<div class="subscribe-icon"><i class="icon-envelope21"></i></div>
+						<h2 class="mb-0 mt-2 position-relative" style="z-index: 1;">Click here to Subscribe our
+							Newsletter <i class="icon-arrow-down position-relative" style="top: 5px"></i>
+						</h2>
+					</div>
+					<div class="collapse" id="target-1">
+						<div class="form-widget pb-5" data-alert-type="false">
+							<div class="form-result"></div>
+							<div class="nonprofit-loader css3-spinner" style="position: absolute;">
+								<div class="css3-spinner-bounce1"></div>
+								<div class="css3-spinner-bounce2"></div>
+								<div class="css3-spinner-bounce3"></div>
+							</div>
+							<div id="nonprofit-submitted" class="center">
+								<h4 class="fw-semibold mb-0">Thank You for Contact Us! Our Team will contact you
+									asap on your email Address.</h4>
+							</div>
+							<form id="nonprofit" class="row mt-2"
+								action="https://themes.semicolonweb.com/html/canvas/include/form.php" method="post"
+								enctype="multipart/form-data">
+								<div class="col-md-4 mb-4 mb-md-1">
+									<label for="nonprofit-name">Name:</label>
+									<input type="text" name="nonprofit-name" id="nonprofit-name"
+										class="form-control border-form-control required" value=""
+										placeholder="Enter your Full Name">
+								</div>
+								<div class="col-md-4 mb-4 mb-md-1">
+									<label for="nonprofit-phone">Contact:</label>
+									<input type="text" name="nonprofit-phone" id="nonprofit-phone"
+										class="form-control border-form-control" value=""
+										placeholder="Enter your Contact Number">
+								</div>
+								<div class="col-md-4 mb-4 mb-md-1">
+									<label for="nonprofit-email">Email:</label>
+									<input type="email" name="nonprofit-email" id="nonprofit-email"
+										class="form-control border-form-control required" value=""
+										placeholder="Enter your Email">
+								</div>
+								<div class="col-12 d-none">
+									<input type="text" id="nonprofit-botcheck" name="nonprofit-botcheck" value="" />
+								</div>
+								<button type="submit" name="nonprofit-submit"
+									class="btn button button-rounded button-xlarge button-dark bg-dark shadow nott ls0 m-0 subscribe-button">Subscribe
+									Now</button>
+								<input type="hidden" name="prefix" value="nonprofit-">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section m-0 p-0 row align-items-stretch clearfix"
+				style="background-color: rgba(198,192,156, 0.15);">
+				<div class="col-lg-4 dark d-flex flex-column align-items-center center justify-content-center"
+					style="background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url('demos/nonprofit/images/others/event.jpg') center center repeat; background-size: cover; min-height: 300px;">
+					<h2 class="display-4 px-4 fw-bold mb-4 d-block">Events Overview</h2>
+				</div>
+				<div class="col-lg-8 col-padding">
+					<div class="events-calendar">
+						<div class="events-calendar-header clearfix">
+							<div
+								class="calendar-month-year d-flex text-start justify-content-between align-items-center w-100">
+								<div>
+									<span id="calendar-month" class="calendar-month text-dark"></span>
+									<span id="calendar-year" class="calendar-year text-dark"></span>
+								</div>
+								<nav>
+									<span id="calendar-prev" class="calendar-prev bg-color"><i
+											class="icon-chevron-left text-dark"></i></span>
+									<span id="calendar-next" class="calendar-next bg-color"><i
+											class="icon-chevron-right text-dark"></i></span>
+									<span id="calendar-current" class="calendar-current bg-color"
+										title="Got to current date"><i class="icon-reload text-dark"></i></span>
+								</nav>
+							</div>
+						</div>
+						<div id="calendar" class="fc-calendar-container"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section bg-transparent" style="padding: 80px 0">
+				<div class="container clearfix">
+					<div class="row justify-content-center">
+						<div class="col-md-7 center">
+							<div class="heading-block border-bottom-0 mb-4">
+								<div class="animated-wrapper">
+									<h2 class="mb-4 nott" id="animated">Who Work With Us</h2>
+								</div>
+							</div>
+							<div class="svg-line bottommargin-sm clearfix">
+								<img style="width: 400px;" src="demos/nonprofit/images/underline.png" alt="svg divider"
+									height="15">
+							</div>
+							<p>We work to raise the voice of rural people,we invite you to join us. We voice those to
+								join our community as equal partners in what we do
+								Read more below about what that means to us and check out our supporters.</p>
+						</div>
+						<div class="clear"></div>
+						<div class="col-md-11 my-4">
+							<ul class="clients-grid grid-2 grid-sm-3 grid-md-4 mb-0">
+								<li class="grid-item"><a href="#"><img src="images/clients/COLIVING1.png" alt="Clients" style="padding-top: 4rem;"></a>
+								</li>
+								<li class="grid-item"><a href="#"><img src="images/clients/2 (4).png" alt="Clients"></a>
+								</li>
+								<li class="grid-item"><a href="https://varun.theno1.in/"><img src="images/clients/darklogo1.png" alt="Clients" style="padding-top: 5rem;"></a>
+								</li>
+								<li class="grid-item"><a href="#"><img src="images/clients/kryoss (1).png" alt="Clients"></a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="line line-sm my-0 clearfix"></div>
+			<div class="clear"></div>
+			<div class="section section-details mb-0 bg-white" style="padding: 80px 0 160px;">
+				<div class="w-100 h-100 d-none d-md-block"
+					style="position: absolute; top: 0; left: 0; background: #FFF url('demos/nonprofit/images/others/section-bg.jpg') no-repeat bottom right / cover;">
+				</div>
+				<div class="container clearfix">
+					<div class="row">
+						<div class="col-md-4 px-4 mb-5">
+							<h4 class="fw-medium mb-4">About MGMG</h4>
+							<p class="mb-3">Mera Gaon Mera Gaurav a team of enthusiastic people with a vision to empower
+								the rural people so that they can develop themselves.</p><br>
+							<abbr title="Phone Number"><strong>Phone:</strong></abbr>+91 7835888333<br>
+							<abbr title="Email Address"><strong>Email:</strong></abbr> <a
+								style="color: rgb(109, 197, 226);"
+								href="https://themes.semicolonweb.com/cdn-cgi/l/email-protection" class="__cf_email__ "
+								data-cfemail="info@mgmgf.org">info@mgmgf.org</a>
+						</div>
+						<div class="col-md-4 px-4 mb-5">
+							<h4 class="fw-medium mb-4">Our Vission</h4>
+							<p>“Empowering rural people for their own development”</p>
+						</div>
+						<div class="col-md-4 px-4 mb-5">
+							<h4 class="fw-medium mb-4">Mission</h4>
+							<p> Mission is to “adopt” one village at a time and work with them with a objective of
+								eradicating poverty and unemployment through a three-pronged-strategy i.e. EDUCATION,
+								INFRASTRUCTURE AND EMPOWERMENT.</p>
+						</div>
+						<div class="col-md-4 px-4 mb-5 mb-md-0">
+							<h4 class="fw-medium mb-4">Support</h4>
+							<p class="mb-3">Compellingly enable premium alignments rather than sustainable content.
+							</p>
+							<a href="#" class="mb-1 d-block" style="color: rgb(109, 197, 226);"><i class="fa fa-envelope"
+								icon-envelope21 position-relative" style="top: 1px;"></i> <span class=""
+									data-cfemail="info@mgmgf.org">info@mgmgf.org</a>
+
+							<a href="https://www.facebook.com/MeraGaonMeraGauravFoundation" class="social-icon si-dark si-small si-facebook" title="Facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+							<a href="https://www.instagram.com/invites/contact/?i=p9fmj8q189d0&utm_content=oz2szb4" class="social-icon si-dark si-small si-instagram" title="Instagram">
+								<i class="icon-instagram"></i>
+								<i class="icon-instagram"></i>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer style="background-color: #002D40;">
+		<div class="container">
+
+			<div class="footer-widgets-wrap dark clearfix"
+				style="background: radial-gradient(rgba(0,45,64,.5), rgba(0,45,64,.1), rgba(0,45,64,.5)), url('demos/nonprofit/images/others/footer.png') repeat center center / cover;  padding: 150px 0">
+				<div class="mx-auto center" style="max-width: 700px;">
+					<h2 class="display-2 fw-bold text-white mb-0 ls1 font-secondary mb-4"><i
+							class="icon-heart d-block mb-3"></i>Help the Homeless &amp; Hungry People.</h2>
+					<a href="donate.html"
+						class="button button-rounded button-xlarge button-white bg-white button-light text-dark shadow nott ls0 ms-0 mt-5">Donate
+						Now</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="copyrights" class="bg-color">
+			<div class="container clearfix">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-md-6">
+						Copyrights &copy; 2020 All Rights Reserved by canvas Inc.<br>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+						</div>
+					</div>
+					<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+						<div class="copyrights-menu copyright-links clearfix">
+							<a href="demo-nonprofit-about.html">About</a>/<a href="index.html">Home</a>/<a href="demo-nonprofit-contact.html">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="floating-contact-wrap">
+		<div class="floating-contact-btn shadow">
+			<i class="floating-contact-icon btn-unactive icon-envelope21"></i>
+			<i class="floating-contact-icon btn-active icon-line-plus"></i>
+		</div>
+		<div class="floating-contact-box">
+			<div id="q-contact" class="widget quick-contact-widget clearfix">
+				<div class="floating-contact-heading bg-color p-4 rounded-top">
+					<h3 class="mb-0 font-secondary h2 ls0">Quick Contact 👋</h3>
+					<p class="mb-0">Get in Touch with Us</p>
+				</div>
+				<div class="form-widget bg-white" data-alert-type="false">
+					<div class="form-result"></div>
+					<div class="floating-contact-loader css3-spinner" style="position: absolute;">
+						<div class="css3-spinner-bounce1"></div>
+						<div class="css3-spinner-bounce2"></div>
+						<div class="css3-spinner-bounce3"></div>
+					</div>
+					<div id="floating-contact-submitted" class="p-5 center">
+						<i class="icon-line-mail h1 color"></i>
+						<h4 class="fw-normal mb-0 font-body">Thank You for Contact Us! Our Team will contact you
+							asap on your email Address.</h4>
+					</div>
+					<form class="mb-0" id="floating-contact"
+						action="https://themes.semicolonweb.com/html/canvas/include/form.php" method="post"
+						enctype="multipart/form-data">
+						<div class="input-group mb-3">
+							<span class="input-group-text bg-transparent"><i class="icon-user-alt"></i></span>
+							<input type="text" name="floating-contact-name" id="floating-contact-name"
+								class="form-control required" value="" placeholder="Enter your Full Name">
+						</div>
+						<div class="input-group mb-3">
+							<span class="input-group-text bg-transparent"><i class="icon-at"></i></span>
+							<input type="email" name="floating-contact-email" id="floating-contact-email"
+								class="form-control required" value="" placeholder="Enter your Email Address">
+						</div>
+						<div class="input-group mb-3">
+							<span class="input-group-text bg-transparent"><i class="icon-comment21"></i></span>
+							<textarea name="floating-contact-message" id="floating-contact-message"
+								class="form-control required" cols="30" rows="4"></textarea>
+						</div>
+						<input type="hidden" id="floating-contact-botcheck" name="floating-contact-botcheck" value="" />
+						<button type="submit" name="floating-contact-submit" class="btn btn-dark w-100 py-2">Send
+							Message</button>
+						<input type="hidden" name="prefix" value="floating-contact-">
+						<input type="hidden" name="subject" value="Messgae From Floating Contact">
+						<input type="hidden" name="html_title" value="Floating Contact Message">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/jquery.calendario.js"></script>
+	<script src="demos/nonprofit/js/events.js"></script>
+	<script src="js/functions.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			var elementParent = $('.floating-contact-wrap');
+			$('.floating-contact-btn, .btn-contact').off('click').on('click', function (e) {
+				elementParent.toggleClass('active',);
+				e.preventDefault(e);
+			});
+		});
+
+		var cal = $('#calendar').calendario({
+			onDayClick: function ($el, $contentEl, dateProperties) {
+
+				for (var key in dateProperties) {
+					console.log(key + ' = ' + dateProperties[key]);
+				}
+
+			},
+			caldata: canvasEvents
+		}),
+			$month = $('#calendar-month').html(cal.getMonthName()),
+			$year = $('#calendar-year').html(cal.getYear());
+
+		$('#calendar-next').on('click', function () {
+			cal.gotoNextMonth(updateMonthYear);
+		});
+		$('#calendar-prev').on('click', function () {
+			cal.gotoPreviousMonth(updateMonthYear);
+		});
+		$('#calendar-current').on('click', function () {
+			cal.gotoNow(updateMonthYear);
+		});
+
+		function updateMonthYear() {
+			$month.html(cal.getMonthName());
+			$year.html(cal.getYear());
+		};
+
+	</script>
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+		integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+		data-cf-beacon='{"rayId":"710841ef1aa26f01","token":"0627f0b8b73941069bc19139e63db853","version":"2021.12.0","si":100}'
+		crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-nonprofit.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 May 2022 19:17:46 GMT -->
+
+</html>
